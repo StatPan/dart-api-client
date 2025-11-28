@@ -1,37 +1,46 @@
-from typing import Optional, Any, Dict, Union
+from typing import Optional, Any, Dict, Union, List
 from ..models.corp_code import CorpCode
 from ..models.disclosure import DisclosureList
+from ..models.company import Company
 
 class GeneratedDartAPIMixin:
     """
     Auto-generated API methods from YAML specifications.
     """
+    async def get_corp_codes(self) -> List[CorpCode]:
+        """
+        Helper to get corporation codes as a list of CorpCode objects.
+        This is a wrapper around get_corp_code() which handles the XML/ZIP logic internally.
+        """
+        return await self.get_corp_code()
+
+    # --- Generated Methods Below ---
     async def request(self, endpoint: str, params: Dict[str, Any] | None = None) -> Any:
         raise NotImplementedError("Mixin expects 'request' method to be implemented by host class")
 
     # --- Group DS001 ---
-    async def get_list(self, corp_code: Optional[str] = None, bgn_de: Optional[str] = None, end_de: Optional[str] = None, last_reprt_at: Optional[str] = None, pblntf_ty: Optional[str] = None, pblntf_detail_ty: Optional[str] = None, corp_cls: Optional[str] = None, sort: Optional[str] = None, sort_mth: Optional[str] = None, page_no: int = 1, page_count: int = 100) -> Dict[str, Any]:
+    async def get_list(self, corp_code: Optional[str] = None, bgn_de: Optional[str] = None, end_de: Optional[str] = None, last_reprt_at: Optional[str] = None, pblntf_ty: Optional[str] = None, pblntf_detail_ty: Optional[str] = None, corp_cls: Optional[str] = None, sort: Optional[str] = None, sort_mth: Optional[str] = None, page_no: Optional[int] = None, page_count: Optional[int] = None) -> DisclosureList:
         """
         공시검색
         
-        공시 유형별, 회사별, 날짜별 등 여러가지 조건으로 공시보고서 검색기능을 제공합니다.
+        DART에 등록되어있는 공시보고서의 목록 및 상세정보를 제공합니다.
         
         Endpoint: list.json
         Dataset: list
         Group: DS001
         
         Args:
-            corp_code: 기업 고유번호 (8자리)
-            bgn_de: 시작일 (YYYYMMDD)
-            end_de: 종료일 (YYYYMMDD)
-            last_reprt_at: 최종보고서 검색여부 (Y/N)
-            pblntf_ty: 공시유형
-            pblntf_detail_ty: 공시상세유형
-            corp_cls: 법인구분 (Y=유가, K=코스닥, N=코넥스, E=기타)
-            sort: 정렬 (date=접수일, crp=회사명, rpt=보고서명)
-            sort_mth: 정렬방법 (asc=오름차순, desc=내림차순)
-            page_no: 페이지 번호
-            page_count: 페이지당 건수 (최대 100)
+            corp_code (str): 공시대상회사의 고유번호(8자리)
+            bgn_de (str): 검색시작일자(YYYYMMDD)
+            end_de (str): 검색종료일자(YYYYMMDD)
+            last_reprt_at (str): 최종보고서 검색여부(Y or N)
+            pblntf_ty (str): 공시유형
+            pblntf_detail_ty (str): 공시상세유형
+            corp_cls (str): 법인구분
+            sort (str): 정렬(date: 접수일자, crp: 회사명, rpt: 보고서명)
+            sort_mth (str): 정렬방법(desc: 내림차순, asc: 오름차순)
+            page_no (int): 페이지 번호(1~n)
+            page_count (int): 페이지 건수(1~100)
         """
         params = {
             "corp_code": corp_code,
@@ -48,27 +57,29 @@ class GeneratedDartAPIMixin:
         }
         # Filter None values
         params = {k: v for k, v in params.items() if v is not None}
-        return await self.request("list.json", params)
+        response = await self.request("list.json", params)
+        return DisclosureList(**response)
 
-    async def get_company(self, corp_code: str) -> Dict[str, Any]:
+    async def get_company(self, corp_code: str) -> Company:
         """
         기업개황
         
-        DART에 등록되어있는 기업의 개황정보를 제공합니다.
+        DART에 등록되어있는 공시대상회사의 기업개황 정보를 제공합니다.
         
         Endpoint: company.json
         Dataset: company
         Group: DS001
         
         Args:
-            corp_code: 기업 고유번호 (8자리)
+            corp_code (str): 공시대상회사의 고유번호(8자리)
         """
         params = {
             "corp_code": corp_code,
         }
         # Filter None values
         params = {k: v for k, v in params.items() if v is not None}
-        return await self.request("company.json", params)
+        response = await self.request("company.json", params)
+        return Company(**response)
 
     async def get_api_2019003(self, rcept_no: str) -> Dict[str, Any]:
         """

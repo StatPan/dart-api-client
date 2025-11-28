@@ -18,16 +18,31 @@ class DartAPIClient(GeneratedDartAPIMixin):
     BASE_URL = "https://opendart.fss.or.kr/api"
 
     def __init__(
-        self, 
-        api_key: Optional[str] = None, 
-        requests_per_minute: int = 100
+        self,
+        api_key: Optional[str] = None,
+        requests_per_minute: int = 100,
+        limiter: Optional[AsyncLimiter] = None,
     ):
+        """
+        Initialize DartAPIClient.
+        
+        Args:
+            api_key: DART API Key. If None, tries to read from DART_API_KEY env var.
+            requests_per_minute: Max requests per minute (default: 100).
+            limiter: Optional external AsyncLimiter instance (e.g. for sharing across tasks).
+                     If provided, requests_per_minute is ignored.
+        """
         self.api_key = api_key or os.getenv("DART_API_KEY")
         if not self.api_key:
-            raise ValueError("DART API key is required. Set DART_API_KEY env var or pass it explicitly.")
-        
-        self.limiter = AsyncLimiter(requests_per_minute, 60)
+            raise ValueError("DART_API_KEY is required")
+            
         self.client = httpx.AsyncClient(timeout=30.0)
+        
+        # Use provided limiter or create new one
+        if limiter:
+            self.limiter = limiter
+        else:
+            self.limiter = AsyncLimiter(max_rate=requests_per_minute, time_period=60)
 
     async def close(self):
         await self.client.aclose()
@@ -64,18 +79,23 @@ class DartAPIClient(GeneratedDartAPIMixin):
              return response.content
 
         # Check DART specific error codes
-        if isinstance(data, dict):
-            status = data.get("status")
-            message = data.get("message")
-
-            if status and status != "000":
-                if status == "010":
-                    raise DartAuthError(status, message)
-                elif status == "020":
-                    raise DartLimitError(status, message)
-                else:
-                    raise DartAPIError(status, message)
+        # Check status code
+        status = data.get("status")
+        message = data.get("message", "")
         
+        if status != "000":
+            if status == "010":
+                raise DartAuthError(message, code=status)
+            elif status == "020":
+                raise DartLimitError(message, code=status)
+            else:
+                # 013: No data found is common, but technically an API "error" or empty state.
+                # DART returns 013 when search has no results.
+                # We might want to let the caller decide, but raising exception is safer for "API Client".
+                # However, for 013 (No data), returning empty list might be more pythonic in some cases.
+                # For now, let's raise exception to be explicit as requested.
+                raise DartAPIError(message, code=status)
+                
         return data
 
     async def get_corp_code(self) -> list[CorpCode]:

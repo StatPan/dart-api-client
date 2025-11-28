@@ -51,6 +51,7 @@ dev-dependencies = [
     "types-xmltodict>=0.13.0",
     "build>=1.3.0",
     "twine>=6.2.0",
+    "python-dotenv>=1.1.1",
 ]
 
 [tool.pytest.ini_options]
