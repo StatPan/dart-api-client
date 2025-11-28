@@ -44,6 +44,15 @@ class DartAPIClient(GeneratedDartAPIMixin):
         else:
             self.limiter = AsyncLimiter(max_rate=requests_per_minute, time_period=60)
 
+    def __del__(self):
+        if hasattr(self, "client") and not self.client.is_closed:
+            # We cannot await here, but we can warn the user
+            import warnings
+            warnings.warn(
+                "DartAPIClient was not closed. Use 'async with DartAPIClient(...)', or call 'await client.close()'.",
+                ResourceWarning
+            )
+
     async def close(self):
         await self.client.aclose()
 
@@ -85,19 +94,18 @@ class DartAPIClient(GeneratedDartAPIMixin):
 
         # Check status code
         status = data.get("status")
+        if status is None:
+            # If JSON but no status, it might be a different API structure or error
+            raise DartAPIError("INVALID_RESPONSE", "Response JSON missing 'status' field")
+
         message = data.get("message", "")
         
-        if status and status != "000":
+        if status != "000":
             if status == "010":
                 raise DartAuthError(status, message)
             elif status == "020":
                 raise DartLimitError(status, message)
             else:
-                # 013: No data found is common, but technically an API "error" or empty state.
-                # DART returns 013 when search has no results.
-                # We might want to let the caller decide, but raising exception is safer for "API Client".
-                # However, for 013 (No data), returning empty list might be more pythonic in some cases.
-                # For now, let's raise exception to be explicit as requested.
                 raise DartAPIError(status, message)
                 
         return data
