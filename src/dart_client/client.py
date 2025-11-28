@@ -47,10 +47,10 @@ class DartAPIClient(GeneratedDartAPIMixin):
     def __del__(self):
         if hasattr(self, "client") and not self.client.is_closed:
             # We cannot await here, but we can warn the user
-            import warnings
-            warnings.warn(
-                "DartAPIClient was not closed. Use 'async with DartAPIClient(...)', or call 'await client.close()'.",
-                ResourceWarning
+            import logging
+            logger = logging.getLogger("dart_client")
+            logger.warning(
+                "DartAPIClient was not closed. Use 'async with DartAPIClient(...)', or call 'await client.close()'."
             )
 
     async def close(self):
