@@ -79,22 +79,26 @@ class DartAPIClient(GeneratedDartAPIMixin):
              return response.content
 
         # Check DART specific error codes
+        if not isinstance(data, dict):
+            # Should not happen if response.json() succeeded, but safe guard
+            return data
+
         # Check status code
         status = data.get("status")
         message = data.get("message", "")
         
-        if status != "000":
+        if status and status != "000":
             if status == "010":
-                raise DartAuthError(message, code=status)
+                raise DartAuthError(status, message)
             elif status == "020":
-                raise DartLimitError(message, code=status)
+                raise DartLimitError(status, message)
             else:
                 # 013: No data found is common, but technically an API "error" or empty state.
                 # DART returns 013 when search has no results.
                 # We might want to let the caller decide, but raising exception is safer for "API Client".
                 # However, for 013 (No data), returning empty list might be more pythonic in some cases.
                 # For now, let's raise exception to be explicit as requested.
-                raise DartAPIError(message, code=status)
+                raise DartAPIError(status, message)
                 
         return data
 
