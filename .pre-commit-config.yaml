@@ -19,3 +19,9 @@ repos:
     hooks:
       - id: mypy
         additional_dependencies: [types-requests, types-xmltodict, pydantic]
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.13.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
