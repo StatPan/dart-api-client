@@ -1,0 +1,602 @@
+[
+  {
+    "corp_code": "00434003",
+    "corp_name": "다코",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00430964",
+    "corp_name": "굿앤엘에스",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00388953",
+    "corp_name": "크레디피아제이십오차유동화전문회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00179984",
+    "corp_name": "연방건설산업",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00420143",
+    "corp_name": "브룩스피알아이오토메이션잉크",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00401111",
+    "corp_name": "매경아이비아이",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00435534",
+    "corp_name": "캐드뱅크",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00430186",
+    "corp_name": "엠와이오피삼차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00430201",
+    "corp_name": "엠와이오피이차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00430210",
+    "corp_name": "엠와이오피일차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00430229",
+    "corp_name": "포스미디어",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00140432",
+    "corp_name": "축복할렐루야",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00426208",
+    "corp_name": "한국전자화학",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00433262",
+    "corp_name": "ConnachtCapitalMarketInvestmentLtd.",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00433749",
+    "corp_name": "선진아이티",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00433785",
+    "corp_name": "팀스코리아",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00196079",
+    "corp_name": "에넥스하이테크",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00435048",
+    "corp_name": "세이스텝바이스텝혼합형펀드",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00435057",
+    "corp_name": "유리알파헷지채권혼합형펀드",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00108843",
+    "corp_name": "한기술정보통신",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00443232",
+    "corp_name": "다움종합건설",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00248293",
+    "corp_name": "한국애치슨",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00455662",
+    "corp_name": "고은상사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00149318",
+    "corp_name": "조흥종합건설",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00451347",
+    "corp_name": "유니즈유통",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00415105",
+    "corp_name": "창대화장품",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00420824",
+    "corp_name": "문화종합건설",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00389439",
+    "corp_name": "한국종합미디어",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00454016",
+    "corp_name": "아이펜텍",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00452072",
+    "corp_name": "대홍염공",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00437602",
+    "corp_name": "지오항공여행사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00365518",
+    "corp_name": "헤이아니타코리아",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00246967",
+    "corp_name": "태산산업개발",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00445559",
+    "corp_name": "군포종합시장",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00444657",
+    "corp_name": "기우",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00448936",
+    "corp_name": "라시도",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00405658",
+    "corp_name": "예전미디어",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00410818",
+    "corp_name": "세미가",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00416061",
+    "corp_name": "대닉스",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00448909",
+    "corp_name": "인포핸드",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00445407",
+    "corp_name": "지현개발",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00421647",
+    "corp_name": "한국부동산신탁제일차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00421425",
+    "corp_name": "ISCCaymanLtd.",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00423265",
+    "corp_name": "연산",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00423292",
+    "corp_name": "씨케이알유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00420602",
+    "corp_name": "디에스피",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00307505",
+    "corp_name": "LOMBARDKOREAILIMITED",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00241397",
+    "corp_name": "우신투자자문",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00421896",
+    "corp_name": "외환카드제오차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00365712",
+    "corp_name": "태연",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00388616",
+    "corp_name": "글로벌금강제일차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00230407",
+    "corp_name": "글로벌렌탈",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00423566",
+    "corp_name": "뤼미에르에셋",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00423274",
+    "corp_name": "바사라엔터테인먼트",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00419688",
+    "corp_name": "대백유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00419712",
+    "corp_name": "아이키키",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00414665",
+    "corp_name": "진명씨앤씨",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00421869",
+    "corp_name": "한경핫벤처",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00421957",
+    "corp_name": "우리부동산제일차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00255442",
+    "corp_name": "영진상운",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00427517",
+    "corp_name": "한국토지신탁제오차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00376152",
+    "corp_name": "다드림커뮤니케이션",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00382241",
+    "corp_name": "ARISAIGASIANSMALLCOMPANIESFUND(L)BHD",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00431501",
+    "corp_name": "싱가포르개발은행서울지점",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00434289",
+    "corp_name": "KTB혼합형펀드",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00434298",
+    "corp_name": "KTB플러스찬스혼합형펀드",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00434313",
+    "corp_name": "KTB포트폴리오스타혼합형펀드",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00434322",
+    "corp_name": "KTB에버스타혼합형펀드",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00429463",
+    "corp_name": "나노이앤씨",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00429515",
+    "corp_name": "지산엔터프라이즈",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00432175",
+    "corp_name": "유아이에스코리아",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00387033",
+    "corp_name": "트리플에스유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00384045",
+    "corp_name": "크레디피아제이십일차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00431608",
+    "corp_name": "싱가포르개발은행",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00431705",
+    "corp_name": "엘지팩토링제일차유동화전문유한회사",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00430256",
+    "corp_name": "이피에스뱅크",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00431167",
+    "corp_name": "이라이프네트워크",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00432315",
+    "corp_name": "덕성",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00413134",
+    "corp_name": "타오건설",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00435376",
+    "corp_name": "장원코리아",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00110909",
+    "corp_name": "대신통상",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00220695",
+    "corp_name": "서울교육",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00211794",
+    "corp_name": "보성패션",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00454496",
+    "corp_name": "넥스탑",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00455592",
+    "corp_name": "마니빌",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00370796",
+    "corp_name": "제이엘코프",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00199401",
+    "corp_name": "컴마을",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00369596",
+    "corp_name": "삼신크리에이션",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00210078",
+    "corp_name": "호한통상",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00363398",
+    "corp_name": "케이엠티",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00110042",
+    "corp_name": "대백가구",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00364324",
+    "corp_name": "청빛산업개발",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00248017",
+    "corp_name": "삼양전자",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00452179",
+    "corp_name": "숭민코리아유통",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00413754",
+    "corp_name": "유오티앤씨",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00343163",
+    "corp_name": "한라스페코중공업",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00452513",
+    "corp_name": "알본",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00435978",
+    "corp_name": "상일디지털",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00368153",
+    "corp_name": "서전어패럴",
+    "stock_code": null,
+    "modify_date": "20170630"
+  },
+  {
+    "corp_code": "00455149",
+    "corp_name": "웰비스트랜스",
+    "stock_code": null,
+    "modify_date": "20170630"
+  }
+]
