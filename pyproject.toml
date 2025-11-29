@@ -78,7 +78,6 @@ version_variable = [
 branch = "master"
 upload_to_pypi = true
 upload_to_release = true
-build_command = "pip install build && python -m build"
 commit_parser = "angular"
 
 [tool.semantic_release.changelog]
