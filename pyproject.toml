@@ -71,26 +71,23 @@ ignore = []
 python_version = "3.12"
 strict = true
 [tool.semantic_release]
-version_variable = [
+version_variables = [
     "src/dart_client/__init__.py:__version__",
     "pyproject.toml:version"
 ]
-branch = "master"
-upload_to_pypi = true
-upload_to_release = true
 commit_parser = "angular"
+build_command = "pip install build && python -m build"
+
+[tool.semantic_release.branches.master]
+match = "(master|main)"
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = []
 mode = "update"
 
-[tool.semantic_release.branches.master]
-match = "(master|main)"
+[tool.semantic_release.publish]
+upload_to_vcs_release = true
 
-[tool.semantic_release.commit_parser_options]
-allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
-minor_tags = ["feat"]
-patch_tags = ["fix", "perf"]
 
 [tool.commitizen]
 name = "cz_conventional_commits"
