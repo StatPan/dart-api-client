@@ -2,6 +2,27 @@
 
 <!-- version list -->
 
+## v1.0.2 (2025-11-29)
+
+### Bug Fixes
+
+- Enhance robustness in request validation and cleanup
+  ([`eba20f7`](https://github.com/StatPan/dart-api-client/commit/eba20f71d710d7faa9e2c2d46ed9f2725c5c4609))
+
+- **client**: Use logging instead of warnings for unclosed client check
+  ([`836e98d`](https://github.com/StatPan/dart-api-client/commit/836e98d50c77125bcd65e2ca91b2122e1f45fb02))
+
+### Chores
+
+- Setup commitizen for conventional commits
+  ([`93aedc8`](https://github.com/StatPan/dart-api-client/commit/93aedc853f75ce9bcc1d5bdc88da27a3878f59da))
+
+### Documentation
+
+- Add contributing guide with workflow rules
+  ([`db9e7de`](https://github.com/StatPan/dart-api-client/commit/db9e7dedb776535816b810463b7c0a755523a3b5))
+
+
 ## v1.0.1 (2025-11-28)
 
 ### Bug Fixes
