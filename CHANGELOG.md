@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.4 (2025-11-29)
+
+### Bug Fixes
+
+- Separate build step from semantic-release to ensure correct versioning
+  ([`6da22d5`](https://github.com/StatPan/dart-api-client/commit/6da22d5efc583c63d42d08e04b60576fada697bb))
+
+
 ## v1.0.3 (2025-11-29)
 
 ### Bug Fixes
