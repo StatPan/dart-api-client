@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.5 (2025-11-29)
+
+### Bug Fixes
+
+- Pull latest changes after release to ensure correct build version
+  ([`2e3621b`](https://github.com/StatPan/dart-api-client/commit/2e3621b4d3b3d661fd9387ebdf9021304d74bb20))
+
+
 ## v1.0.4 (2025-11-29)
 
 ### Bug Fixes
