@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v1.0.3 (2025-11-29)
+
+### Bug Fixes
+
+- Trigger release to verify pypi publish
+  ([`80e7173`](https://github.com/StatPan/dart-api-client/commit/80e717372f24a6ec338f2869c1905bd9d3ae12f4))
+
+### Chores
+
+- Use explicit pypi publish action
+  ([`040cbe3`](https://github.com/StatPan/dart-api-client/commit/040cbe33468ee3d848c3dc9f43e188a162351460))
+
+
 ## v1.0.2 (2025-11-29)
 
 ### Bug Fixes
